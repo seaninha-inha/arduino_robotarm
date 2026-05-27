@@ -10,12 +10,9 @@ int tt=8;
 int natural = 90;
 
 // 박스 위치 각도
-int RED_POS   = 60;    // 왼쪽 30도
-int GREEN_POS = 90;    // 정면
-int BLUE_POS  = 120;   // 오른쪽 30도
-
-// 색상 변수 초기화: 0 = RED, 1 = GREEN, 2 = BLUE
-int color = 0;
+int RED_POS   = 120;    // 왼쪽 30도
+int GREEN_POS = 270;    // 정면
+int BLUE_POS  = 60;   // 오른쪽 30도
 
 void setup() {
 
@@ -42,26 +39,26 @@ void loop() {
 
     // RED
     if(color == 'R') {
-      moveBase(60);
+      moveBase(RED_POS);
       openEndEffector();
       closeEndEffector();
-      moveBase(90);
+      moveBase(natural);
     }
 
     // GREEN
     else if(color == 'G') {
-      moveBase(90);
+      moveBase(GREEN_POS);
       openEndEffector();
       closeEndEffector();
-      moveBase(90);
+      moveBase(natural);
     }
 
     // BLUE
     else if(color == 'B') {
-      moveBase(120);
+      moveBase(BLUE_POS);
       openEndEffector();
       closeEndEffector();
-      moveBase(90);
+      moveBase(natural);
     }
   }
 }
