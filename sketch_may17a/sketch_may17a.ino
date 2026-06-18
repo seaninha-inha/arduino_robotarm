@@ -11,7 +11,7 @@ int natural = 90;
 
 // 박스 위치 각도
 int RED_POS   = 120;    // 왼쪽 30도
-int GREEN_POS = 270;    // 정면
+int GREEN_POS = 90;    // 정면
 int BLUE_POS  = 60;   // 오른쪽 30도
 
 void setup() {
